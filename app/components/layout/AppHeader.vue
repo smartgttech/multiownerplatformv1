@@ -43,6 +43,19 @@ const closeMobileMenu = () => {
               Comment ça marche
             </NuxtLink>
             <NuxtLink 
+              to="/about" 
+              class="text-sm font-medium text-neutral-700 hover:text-primary-600 transition-colors"
+            >
+              À propos
+            </NuxtLink>
+
+            <NuxtLink 
+              to="/contact" 
+              class="text-sm font-medium text-neutral-700 hover:text-primary-600 transition-colors"
+            >
+              Contact
+            </NuxtLink>
+            <NuxtLink 
               to="/become-partner" 
               class="text-sm font-medium text-neutral-700 hover:text-primary-600 transition-colors"
             >
@@ -117,6 +130,20 @@ const closeMobileMenu = () => {
                 class="px-3 py-2.5 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-100 rounded-lg transition-colors"
               >
                 Comment ça marche
+              </NuxtLink>
+              <NuxtLink 
+                to="/about" 
+                @click="closeMobileMenu"
+                class="px-3 py-2.5 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-100 rounded-lg transition-colors"
+              >
+                A propos
+              </NuxtLink>
+              <NuxtLink 
+                to="/contact" 
+                @click="closeMobileMenu"
+                class="px-3 py-2.5 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-100 rounded-lg transition-colors"
+              >
+                Contacts
               </NuxtLink>
               <NuxtLink 
                 to="/become-partner" 
