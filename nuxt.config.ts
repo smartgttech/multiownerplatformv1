@@ -4,7 +4,10 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/google-fonts',
+    'nuxt-vercel-analytics'
+  ],
 
   googleFonts: {
     families: {
