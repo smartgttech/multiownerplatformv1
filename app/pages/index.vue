@@ -43,6 +43,6 @@ definePageMeta({
     <!-- <FinalCTA /> -->
 
     <!-- BACK TO TOP -->
-    <BaseBackToTop isVisible :threshold="1500"/>
+    <BaseBackToTop isVisible :threshold="1500"/>-->
   </div>
 </template>

@@ -96,15 +96,16 @@ const steps: WorkflowStep[] = [
             </div>
 
             <div class="relative z-10 h-full flex flex-col justify-between">
-                <div v-if="step.highlight" class="mt-4 pt-4 border-t border-white/5 flex items-center gap-2">
-                   <span class="flex h-1.5 w-1.5 rounded-full bg-amber-500 animate-ping"></span>
-                   <span class="text-[10px] font-black text-amber-500 uppercase tracking-widest">Killer Feature</span>
-                </div>
               <div class="flex justify-between items-start">
                 <span class="text-6xl font-black transition-all duration-700 opacity-20 group-hover:opacity-100 group-hover:-translate-y-1" :class="step.textAccent">
                   {{ step.number }}
                 </span>
                 <span class="text-4xl transform group-hover:scale-110 transition-transform duration-500">{{ step.icon }}</span>
+              </div>
+
+              <div v-if="step.highlight" class="mt-4 pt-4 border-t border-white/5 flex items-center gap-2">
+                  <span class="flex h-1.5 w-1.5 rounded-full bg-amber-500 animate-ping"></span>
+                  <span class="text-[10px] font-black text-amber-500 uppercase tracking-widest">Killer Feature</span>
               </div>
 
               <div>
