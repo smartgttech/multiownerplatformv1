@@ -5,6 +5,7 @@ import BaseSection from '~/components/ui/common/BaseSection.vue'
 import BaseCard from '~/components/ui/base/BaseCard.vue'
 import BaseButton from '~/components/ui/base/BaseButton.vue'
 import BaseBadge from '~/components/ui/base/BaseBadge.vue'
+import BaseBackToTop from '~/components/ui/base/BaseBackToTop.vue'
 
 useHead({
   title: 'Comment ça marche - L\'expérience Booking Land'
@@ -17,18 +18,6 @@ definePageMeta({
 // Gestion de l'apparition progressive de la timeline au scroll
 const showWorkflow = ref(false)
 const workflowContainer = ref(null)
-
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      showWorkflow.value = true
-    }
-  }, { threshold: 0.3 })
-  
-  if (workflowContainer.value) {
-    observer.observe(workflowContainer.value)
-  }
-})
 
 // DATA enrichie pour le visuel
 const mainSteps = [
@@ -377,6 +366,8 @@ const toggleFaq = (index: number) => {
       </div>
     </BaseSection>
   </div>
+      <!-- BACK TO TOP -->
+    <BaseBackToTop isVisible :threshold="1500"/>
 </template>
 
 <style scoped>
