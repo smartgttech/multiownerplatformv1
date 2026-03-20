@@ -70,7 +70,7 @@ const animationClasses = computed(() => {
 
   // Gestion de la direction (Translation)
   if (isVisible.value === false) {
-    const dist = '50px' // Distance de déplacement
+    const dist = '200px' // Distance de déplacement
     switch (props.direction) {
       case 'up': transform = `translateY(${dist})` ; break
       case 'down': transform = `translateY(-${dist})` ; break
@@ -80,7 +80,7 @@ const animationClasses = computed(() => {
     }
 
     // Gestion du type d'animation (Scale)
-    if (props.animation === 'zoom') transform += ' scale(0.9)'
+    if (props.animation === 'zoom') transform += ' scale(0.8)'
     if (props.animation === 'bounce') transform += ' scale(0.8)'
   } else {
     // État final (quand visible)
@@ -149,7 +149,7 @@ const containerWidthClasses = computed(() => {
 
 const variantClasses = computed(() => {
   switch (props.variant) {
-    case 'dark': return 'bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white'
+    case 'dark': return 'bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 text-white'
     case 'gray': return 'bg-neutral-50'
     case 'gradient': return 'bg-gradient-to-br from-amber-50 via-white to-blue-50'
     default: return 'bg-white'
