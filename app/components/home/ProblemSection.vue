@@ -31,7 +31,7 @@ const problems = [
     <div class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-neutral-950 to-neutral-50 -mt-32"></div>
   </div>
 
-  <BaseSection spacing="xl" class="bg-neutral-50" animation="zoom" direction="up">
+  <BaseSection width="default" spacing="sm" class="bg-neutral-50" animation="zoom" direction="up">
     <div class="max-w-6xl mx-auto">
       
       <!-- Header -->

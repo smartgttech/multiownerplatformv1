@@ -70,7 +70,7 @@ const animationClasses = computed(() => {
 
   // Gestion de la direction (Translation)
   if (isVisible.value === false) {
-    const dist = '200px' // Distance de déplacement
+    const dist = '50px' // Distance de déplacement
     switch (props.direction) {
       case 'up': transform = `translateY(${dist})` ; break
       case 'down': transform = `translateY(-${dist})` ; break
@@ -140,7 +140,7 @@ const containerWidthClasses = computed(() => {
   const base = 'mx-auto px-4'
   switch (props.width) {
     case 'narrow': return `${base} max-w-4xl`
-    case 'default': return `${base} max-w-6xl`
+    case 'default': return `${base} max-w-5xl`
     case 'wide': return `${base} max-w-7xl`
     case 'full': return 'w-full px-4 md:px-6'
     default: return base
