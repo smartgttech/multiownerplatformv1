@@ -8,7 +8,7 @@ onMounted(() => isVisible.value = true)
 </script>
 
 <template>
-  <BaseSection class="relative min-h-screen flex flex-col overflow-hidden" variant="dark" spacing="sm" direction="right" animation="fade">
+  <BaseSection width="full" class="relative min-h-screen flex flex-col overflow-hidden" variant="dark" spacing="sm" direction="up" animation="fade">
     <!-- Grille de fond -->
     <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, rgba(251,191,36,0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
     
